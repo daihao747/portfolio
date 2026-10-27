@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" role="img" aria-labelledby="title desc">
+  <title id="title">图书口播视频演示封面</title>
+  <desc id="desc">深绿色桌面上的打开书本，作为待替换的图书类作品封面</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102a20"/>
+      <stop offset=".55" stop-color="#173729"/>
+      <stop offset="1" stop-color="#071711"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f0d9" stop-opacity=".95"/>
+      <stop offset=".52" stop-color="#ded9c2" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#b8b49f" stop-opacity=".62"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f1eddb"/>
+      <stop offset="1" stop-color="#aaa893"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".62" cy=".28" r=".65">
+      <stop offset="0" stop-color="#ecf4c7" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#ecf4c7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="35" stdDeviation="28" flood-color="#020906" flood-opacity=".7"/>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 .13"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1000" fill="url(#bg)"/>
+  <ellipse cx="760" cy="250" rx="500" ry="420" fill="url(#glow)"/>
+  <path d="M0 685C220 632 406 647 598 705c205 62 386 72 602 9v286H0Z" fill="#0b1d15"/>
+  <ellipse cx="600" cy="838" rx="480" ry="105" fill="#020a07" opacity=".62" filter="url(#soft)"/>
+
+  <g filter="url(#shadow)" transform="rotate(-2 600 590)">
+    <path d="M150 648c123-66 271-82 450-35v235c-177-49-326-32-450 35Z" fill="url(#edge)"/>
+    <path d="M1050 648c-123-66-271-82-450-35v235c177-49 326-32 450 35Z" fill="url(#edge)"/>
+    <path d="M174 621c119-54 256-66 426-21v215c-167-40-310-25-426 24Z" fill="url(#light)"/>
+    <path d="M1026 621c-119-54-256-66-426-21v215c167-40 310-25 426 24Z" fill="url(#light)"/>
+    <path d="M600 600c-117-31-231-35-352-13v228c121-19 239-10 352 22Z" fill="#e2dec9" opacity=".76"/>
+    <path d="M600 600c117-31 231-35 352-13v228c-121-19-239-10-352 22Z" fill="#f2eedc" opacity=".83"/>
+
+    <g fill="none" stroke="#687263" stroke-linecap="round" opacity=".34">
+      <path d="M232 662c105-29 212-30 321-8" stroke-width="8"/>
+      <path d="M232 698c105-29 212-30 321-8" stroke-width="6"/>
+      <path d="M232 733c105-29 212-30 321-8" stroke-width="6"/>
+      <path d="M232 768c75-20 151-25 226-17" stroke-width="6"/>
+      <path d="M647 654c105-26 209-24 315 4" stroke-width="8"/>
+      <path d="M647 690c105-26 209-24 315 4" stroke-width="6"/>
+      <path d="M647 726c105-26 209-24 315 4" stroke-width="6"/>
+      <path d="M647 762c73-18 147-16 221 3" stroke-width="6"/>
+    </g>
+
+    <path d="M600 600v235" fill="none" stroke="#464e42" stroke-width="5" opacity=".55"/>
+    <path d="M600 600c-21-9-41-17-63-25 18 13 38 24 63 34Z" fill="#a13d2c"/>
+    <path d="M600 600c23-8 45-15 69-20-20 11-42 21-69 29Z" fill="#cf6b49"/>
+  </g>
+
+  <g fill="#d8f878">
+    <circle cx="900" cy="245" r="5"/>
+    <circle cx="938" cy="245" r="5"/>
+    <circle cx="976" cy="245" r="5"/>
+  </g>
+  <text x="900" y="285" fill="#d8f878" font-family="Arial, sans-serif" font-size="18" letter-spacing="5">TALK / BOOK</text>
+  <rect width="1200" height="1000" filter="url(#grain)" opacity=".65"/>
+  <rect x="28" y="28" width="1144" height="944" fill="none" stroke="#f1eee4" stroke-opacity=".13"/>
+</svg>
